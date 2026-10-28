@@ -30,6 +30,7 @@
   };
 
   /* ---------- language state ---------- */
+  const MARK = '<svg width="40" height="40" class="mark" aria-hidden="true" focusable="false" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11_7)"><mask id="mask0_11_7" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-45" width="445" height="445"><path d="M400 -3.05176e-05H0V400H400V-3.05176e-05Z" fill="white"/><path d="M132 -19.9999V292H208" stroke-width="49.4845" stroke-linecap="square" stroke="black"/><path d="M420 108H256V292H420" stroke-width="49.4845" stroke-linecap="square" stroke="black"/></mask><g mask="url(#mask0_11_7)"><path d="M348 -3.05176e-05H52C23.2812 -3.05176e-05 0 23.2812 0 52V348C0 376.719 23.2812 400 52 400H348C376.719 400 400 376.719 400 348V52C400 23.2812 376.719 -3.05176e-05 348 -3.05176e-05Z" fill="#4A7BD6"/></g></g><defs><clipPath id="clip0_11_7"><rect width="400" height="400" fill="white"/></clipPath></defs></svg>';
   const LANG = "en"; // Italian is parked in portfolio-extras/data.it.js
   const L = () => UI[LANG];
   let D, S, projects;
@@ -90,7 +91,7 @@
   function chrome(r) {
     const l = L(), cur = k => (k === "cases" ? (r.page === "work" || r.page === "project") : r.page === k) ? ' aria-current="page"' : "";
     document.getElementById("hdr").innerHTML = `<a class="skip" href="#main" data-scroll="main">${l.skip}</a>
-      <div class="wrap bar"><a class="brand" href="${U.home}"${cur("home")}>${t(S.name)}<span>${t(S.role)}</span></a>
+      <div class="wrap bar"><a class="brand" href="${U.home}"${cur("home")} aria-label="${esc(t(S.name))}, ${esc(t(S.role))}">${MARK}<span class="bt">${t(S.name)}<span>${t(S.role)}</span></span></a>
       <div class="right"><nav aria-label="${l.nMain}"><ul>
         <li><a href="${U.cases}"${cur("cases")}>${l.cases}</a></li>
         <li><a href="${U.about}"${cur("about")}>${l.about}</a></li>
