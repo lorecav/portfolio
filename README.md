@@ -2,10 +2,13 @@
 
 Sito statico (HTML/CSS/JS), nessuna installazione o build. Tutti i contenuti stanno in **`content/data.js`**.
 
+## Pagine
+`index.html` = Home, `work.html` = elenco case study, `about.html` = chi sono ed esperienza, `project.html?p=slug` = singolo case study.
+
 ## Pubblicare su GitHub Pages
 1. Carica **il contenuto** della cartella `portfolio` nella root del tuo repo (`index.html` deve stare in root).
 2. Repo > **Settings > Pages** > Source: *Deploy from a branch* > Branch: `main` / `(root)` > Save.
-3. Dopo 1-2 minuti il sito è su `https://TUO-USERNAME.github.io/NOME-REPO/`.
+3. Dopo 1-2 minuti il sito è su `https://lorecav.github.io/portfolio/`.
 
 ## Modificare i testi personali
 Apri `content/data.js` (puoi farlo direttamente da GitHub con l'icona matita) e sostituisci tutto ciò che è tra `[parentesi quadre]`. Sul sito i placeholder sono evidenziati in giallo: quando non ne vedi più, hai finito.
@@ -30,3 +33,6 @@ Sostituisci `assets/cv.pdf` con il tuo file (stesso nome) oppure cambia `site.cv
 - Titoli/description SEO: `site.seoTitle`, `site.seoDescription` e i tag `<meta>` in `index.html`.
 - Colori e font: variabili all'inizio di `css/style.css`.
 - Nota: i tag Open Graph per i singoli progetti non cambiano nelle anteprime social (sito statico); quelle usano i valori di `project.html`.
+
+- Il sito è solo in inglese. La traduzione italiana è salvata a parte (`portfolio-extras/data.it.js`) e si può riattivare in futuro.
+- `404.html` usa `<base href="/portfolio/">`: se un giorno usi un dominio proprio alla radice, rimuovi quella riga.
