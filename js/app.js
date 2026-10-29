@@ -104,9 +104,9 @@
       <span><a href="${U.home}">${l.home}</a> <a href="${U.cases}">${l.cases}</a> <a href="${U.about}">${l.about}</a></span></div></div>`;
   }
 
-  const card = (p, big) => `<article class="card${big ? " lg" : ""}"><div class="thumb">${fig({ src: p.cover, alt: p.coverAlt || p.title })}</div>
-    <div class="cbody"><p class="meta">${t(p.type)}, ${t(p.industry)}</p><h3><a href="${U.proj(p.slug)}">${t(p.title)}</a></h3>
-    <p>${t(p.summary)}</p><p class="role"><strong>${L().myRole}</strong> ${t(p.role)}</p><span class="more" aria-hidden="true">${L().read}</span></div></article>`;
+  const card = (p, big) => `<article class="card${big ? " lg" : ""}"><h3><a href="${U.proj(p.slug)}">${t(p.title)}</a></h3>
+    <p class="sum">${t(p.summary)}</p><div class="thumb">${fig({ src: p.cover, alt: p.coverAlt || p.title })}</div>
+    <p class="meta">${t(p.type)}, ${t(p.industry)}</p><p class="role"><strong>${L().myRole}</strong> ${t(p.role)}</p><span class="more" aria-hidden="true">${L().read}</span></article>`;
 
   /* ---------- pages ---------- */
   function home(main) {
