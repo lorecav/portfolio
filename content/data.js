@@ -65,7 +65,7 @@ window.PORTFOLIO = {
     { title: "B.A. Communication Science", where: "University of Pisa", dates: "Oct 2014 - Nov 2017" }
   ],
   certifications: [
-    { title: "UXQB", issuer: "International Usability and UX Qualification Board", image: "assets/certs/uxqb.webp", alt: "UXQB logo, International Usability and UX Qualification Board", url: "https://www.certible.com/verify/13365ee1ff591241f99145ab710b56cc" },
+    { title: "Foundation in Human-Centred Design (CPUX-F)", issuer: "UXQB, International Usability and UX Qualification Board", image: "assets/certs/uxqb.webp", alt: "UXQB certified in Foundation in Human-Centred Design, CPUX-F, badge issued through Certible", url: "https://www.certible.com/badge/fb25dcab-052b-4cc6-9ab8-24121d7a5b47/" },
     { title: "UI Design Patterns for Successful Software", issuer: "Interaction Design Foundation (IxDF)", date: "January 2026", note: "Distinction: Top 10% in class", image: "assets/certs/ixdf-ui-design-patterns.webp", alt: "IxDF Course Certificate awarded to Lorenzo Cavalieri for UI Design Patterns for Successful Software, January 27th 2026", zoom: true }
   ],
   skills: {
