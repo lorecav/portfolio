@@ -92,8 +92,8 @@ window.PORTFOLIO = {
       team: "Product manager (author of the use-case and API specification), development team, client stakeholders at Akern. I was the sole designer.",
       scope: "Consumer app, professional app, Bodygram flow, back-office, design system, English localisation",
       tools: "Figma; Claude with the Figma connector (see the AI section)",
-      cover: "assets/projects/akern/crm-dashboard.webp",
-      coverAlt: "Fig 09 · Back-office · CRM dashboard. Mockup data only. A conversion funnel, performance by channel, a monthly trend and invitation status distribution",
+      cover: "assets/projects/akern/cover-mobile.webp",
+      coverAlt: "Four Akern mobile app screens: professional app home, account activation, and the consumer app home with recommendations grouped by nutritionist",
       links: [],
       sections: [
         { heading: "Overview",
