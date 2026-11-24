@@ -24,7 +24,6 @@ window.PORTFOLIO = {
     statement: "I turn complex user needs and business challenges into clear, intuitive, and scalable digital experiences.",
     intro: "Product Designer with 3+ years of experience combining UX design, data analysis and a strong focus on accessibility. I turn user needs, behavioural data and complex information into clear, usable digital experiences, and work in Figma from early exploration to polished interfaces.",
     portrait: "",
-    email: "L.cavalieri259@gmail.com",
     links: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/lorenzo-cavalieri259/" }
     ],

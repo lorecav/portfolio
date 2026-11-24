@@ -12,7 +12,7 @@
       enlarge: "Enlarge certificate", verify: "Verify certification (opens in a new tab)", close: "Close", crumb: "Breadcrumb", onPage: "On this page", next: "Next case study", link: "Link", notice: "What to notice:", placeholder: "Image placeholder",
       facts: { product: "Product", industry: "Industry", timeline: "Timeline", role: "My role", team: "Team", scope: "Scope", tools: "Tools and methods" },
       nfTitle: "This page does not exist.", nfLead: "The link may be broken or the case study may have been removed.", nfHome: "Back to home", nfAll: "All case studies", nfMeta: "Page not found",
-      cta: "Open to senior product design roles.", ctaText: "If you are hiring, or want to talk about a product challenge, write to me.", home: "Home",
+      cta: "Open to product design roles.", ctaText: "If you are hiring, or want to talk about a product challenge, message me on LinkedIn.", home: "Home",
       casesMeta: n => `Product design case studies by ${n}.`, aboutMeta: "About"
     },
     it: {
@@ -24,7 +24,7 @@
       enlarge: "Ingrandisci il certificato", verify: "Verifica la certificazione (si apre in una nuova scheda)", close: "Chiudi", crumb: "Percorso", onPage: "In questa pagina", next: "Prossimo case study", link: "Link", notice: "Da notare:", placeholder: "Immagine segnaposto",
       facts: { product: "Prodotto", industry: "Settore", timeline: "Tempistiche", role: "Il mio ruolo", team: "Team", scope: "Ambito", tools: "Strumenti e metodi" },
       nfTitle: "Questa pagina non esiste.", nfLead: "Il link potrebbe essere errato o il case study potrebbe essere stato rimosso.", nfHome: "Torna alla home", nfAll: "Tutti i case study", nfMeta: "Pagina non trovata",
-      cta: "Disponibile per ruoli di senior product design.", ctaText: "Se stai assumendo, o vuoi parlare di una sfida di prodotto, scrivimi.", home: "Home",
+      cta: "Disponibile per ruoli di product design.", ctaText: "Se stai assumendo, o vuoi parlare di una sfida di prodotto, scrivimi su LinkedIn.", home: "Home",
       casesMeta: n => `Case study di product design di ${n}.`, aboutMeta: "Chi sono"
     }
   };
@@ -98,8 +98,7 @@
         <li><a class="cta" href="#contact" data-scroll="contact">${l.contact}</a></li></ul></nav></div></div><div class="prog" id="prog" aria-hidden="true"></div>`;
     document.getElementById("ftr").innerHTML = `<div class="wrap" id="contact"><h2>${l.cta}</h2>
       <p class="muted">${l.ctaText}</p>
-      <a class="big" href="mailto:${esc(S.email)}">${t(S.email)}</a>
-      <div class="links">${S.links.map(k => `<a href="${esc(k.url)}" target="_blank" rel="noopener">${esc(k.label)}</a>`).join("")}</div>
+      <div class="links">${S.links.map(k => `<a class="big" href="${esc(k.url)}" target="_blank" rel="noopener">${esc(k.label)}</a>`).join("")}</div>
       <div class="foot"><span>© ${new Date().getFullYear()} ${t(S.name)}. ${t(S.role)}, ${t(S.location)}.</span>
       <span><a href="${U.home}">${l.home}</a> <a href="${U.cases}">${l.cases}</a> <a href="${U.about}">${l.about}</a></span></div></div>`;
   }
