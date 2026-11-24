@@ -22,7 +22,7 @@ window.PORTFOLIO = {
     location: "Lucca, Italy",
     headline: "Designing digital products that make complexity feel simple.",
     statement: "I turn complex user needs and business challenges into clear, intuitive, and scalable digital experiences.",
-    intro: "Product Designer with 5+ years of experience combining UX design, data analysis and a strong focus on accessibility. I turn user needs, behavioural data and complex information into clear, usable digital experiences, and work in Figma from early exploration to polished interfaces.",
+    intro: "Product Designer with 3+ years of experience combining UX design, data analysis and a strong focus on accessibility. I turn user needs, behavioural data and complex information into clear, usable digital experiences, and work in Figma from early exploration to polished interfaces.",
     portrait: "",
     email: "L.cavalieri259@gmail.com",
     links: [
@@ -48,7 +48,7 @@ window.PORTFOLIO = {
       points: ["Designed user experiences for 10+ B2B and consumer digital products, from discovery to delivery.", "Worked closely with product managers, developers and stakeholders throughout the product lifecycle.", "Created user journeys, wireframes, prototypes and responsive interfaces in Figma.", "Contributed to scalable design systems and developer hand-off documentation, and improved accessibility across projects following WCAG guidelines."]
     },
     {
-      company: "Publicis Groupe", role: "UX Researcher", dates: "Sep 2022 - Sep 2023",
+      company: "Publicis Groupe", role: "Digital Strategist", dates: "Sep 2022 - Sep 2023",
       context: "International environment with global teams.",
       points: ["Developed digital strategies and analysed user behaviour to support business decisions.", "Presented campaign performance and market insights through KPI reporting."]
     },
